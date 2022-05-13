@@ -38,12 +38,12 @@ class MainActivity : ComponentActivity() {
 fun HomeScreen() {
     val db = Firebase.firestore
     val user = hashMapOf(
-        "first" to "Ada",
-        "last" to "Lovelace",
+        "first" to "Adax",
+        "last" to "Lovelacse",
         "born" to 1815
     )
 
-    db.collection("users")
+    db.collection("usedrs")
         .add(user)
         .addOnSuccessListener { documentReference ->
             Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
